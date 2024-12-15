@@ -18450,7 +18450,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	sora: {
-		num: 216,
+		num: -76,
 		name: "Sora",
 		types: ["Fairy"],
 		gender: "F",
@@ -18464,7 +18464,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Sora", "Sora-Mega"],
 	},
 	soramega: {
-		num: 216,
+		num: -76,
 		name: "Sora-Mega",
 		baseSpecies: "Sora",
 		forme: "Mega",
