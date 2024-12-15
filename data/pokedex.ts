@@ -90,7 +90,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	charmeleon: {
 		num: 5,
 		name: "Charmeleon",
-		types: ["Fire"],
+		types: ["Fire", "Dragon"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 58, atk: 64, def: 58, spa: 80, spd: 65, spe: 80},
 		abilities: {0: "Blaze", H: "Solar Power"},
