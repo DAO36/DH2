@@ -180,7 +180,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	wartortle: {
 		num: 8,
 		name: "Wartortle",
-		types: ["Water"],
+		types: ["Water", "Dragon"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 59, atk: 63, def: 80, spa: 65, spd: 80, spe: 58},
 		abilities: {0: "Torrent", H: "Rain Dish"},
@@ -198,7 +198,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Water"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 79, atk: 83, def: 100, spa: 85, spd: 105, spe: 78},
-		abilities: {0: "Torrent", H: "Rain Dish"},
+		abilities: {0: "Torrent", 1: "Dragon's Maw", H: "Rain Dish"},
 		heightm: 1.6,
 		weightkg: 85.5,
 		color: "Blue",
