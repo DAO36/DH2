@@ -40,60 +40,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0.1,
 		num: 0,
 	},
-	seiso: {
-		onTryBoost(boost, target, source, effect) {
-			if (source && target === source) return;
-			let showMsg = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					delete boost[i];
-					showMsg = true;
-				}
-			}
-			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Seiso", "[of] " + target);
-			}
-		},
-		flags: {breakable: 1},
-		name: "Seiso",
-		rating: 2,
-		num: 29,
-	},
-	elite: {
-		onAfterEachBoost(boost, target, source, effect) {
-			if (!source || target.isAlly(source)) {
-				return;
-			}
-			let statsLowered = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					statsLowered = true;
-				}
-			}
-			if (statsLowered) {
-				this.boost({spa: 2}, target, target, null, false, true);
-			}
-		},
-		flags: {},
-		name: "Elite",
-		rating: 2.5,
-		num: 172,
-	},
-	diva: {
-		onBasePowerPriority: 7,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['sound']) {
-				this.debug('Punk Rock boost');
-				return this.chainModify([5325, 4096]);
-			}
-		},
-		flags: {breakable: 1},
-		name: "Diva",
-		rating: 3.5,
-		num: 244,
-	},
 	spacetime: {
 		onStart(pokemon) {
 			this.field.addPseudoWeather('trickroom', pokemon);
