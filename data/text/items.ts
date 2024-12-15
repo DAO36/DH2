@@ -5,6 +5,274 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 
 		block: "  [POKEMON]'s Ability is protected by the effects of its Ability Shield!",
 	},
+	sorite: {
+		name: "Sorite",
+		shortDesc: "If held by Tokino Sora, this item allows her to Mega Evolve in battle.",
+	},
+	mikorite: {
+		name: "Mikorite",
+		shortDesc: "If held by Sakura Miko, this item allows her to Mega Evolve in battle.",
+	},
+	suisite: {
+		name: "Suisite",
+		shortDesc: "If held by Hoshimachi Suisei, this item allows her to Mega Evolve in battle.",
+	},
+	robocite: {
+		name: "Robocite",
+		shortDesc: "If held by Roboco, this item allows her to Mega Evolve in battle.",
+	},
+	azkinite: {
+		name: "AZKinite",
+		shortDesc: "If held by AZKi, this item allows her to Mega Evolve in battle.",
+	},
+	fubukite: {
+		name: "Fubukite",
+		shortDesc: "If held by Shirakami Fubuki, this item allows her to Mega Evolve in battle.",
+	},
+	matsurite: {
+		name: "Matsurite",
+		shortDesc: "If held by Natsuiro Matsuri, this item allows her to Mega Evolve in battle.",
+	},
+	haachamite: {
+		name: "Haachamite",
+		shortDesc: "If held by Akai Haato, this item allows her to Mega Evolve in battle.",
+	},
+	melite: {
+		name: "Melite",
+		shortDesc: "If held by Yozora Mel, this item allows her to Mega Evolve in battle.",
+	},
+	akirosite: {
+		name: "Akirosite",
+		shortDesc: "If held by Aki Rosenthal, this item allows her to Mega Evolve in battle.",
+	},
+	aquanite: {
+		name: "Aquanite",
+		shortDesc: "If held by Minato Aqua, this item allows her to Mega Evolve in battle.",
+	},
+	ayamite: {
+		name: "Ayamite",
+		shortDesc: "If held by Nakiri Ayame, this item allows her to Mega Evolve in battle.",
+	},
+	chocolite: {
+		name: "Chocolite",
+		shortDesc: "If held by Yuzuki Choco, this item allows her to Mega Evolve in battle.",
+	},
+	shionite: {
+		name: "Shionite",
+		shortDesc: "If held by Murasaki Shion, this item allows her to Mega Evolve in battle.",
+	},
+	subarite: {
+		name: "Subarite",
+		shortDesc: "If held by Oozora Subaru, this item allows her to Mega Evolve in battle.",
+	},
+	koronite: {
+		name: "Koronite",
+		shortDesc: "If held by Inugami Korone, this item allows her to Mega Evolve in battle.",
+	},
+	okayunite: {
+		name: "Okayunite",
+		shortDesc: "If held by Nekomata Okayu, this item allows her to Mega Evolve in battle.",
+	},
+	mionite: {
+		name: "Mionite",
+		shortDesc: "If held by Ookami Mio, this item allows her to Mega Evolve in battle.",
+	},
+	pekorite: {
+		name: "Pekorite",
+		shortDesc: "If held by Usada Pekora, this item allows her to Mega Evolve in battle.",
+	},
+	noelite: {
+		name: "Noelite",
+		shortDesc: "If held by Shirogane Noel, this item allows her to Mega Evolve in battle.",
+	},
+	rushianite: {
+		name: "Rushianite",
+		shortDesc: "If held by Uruha Rushia, this item allows her to Mega Evolve in battle.",
+	},
+	flarite: {
+		name: "Flarite",
+		shortDesc: "If held by Shuranui Flare, this item allows her to Mega Evolve in battle.",
+	},
+	marinite: {
+		name: "Marinite",
+		shortDesc: "If held by Houshou Marine, this item allows her to Mega Evolve in battle.",
+	},
+	coconite: {
+		name: "Coconite",
+		shortDesc: "If held by Kiyru Coco, this item allows her to Mega Evolve in battle.",
+	},
+	kanatite: {
+		name: "Kanatite",
+		shortDesc: "If held by Amane Kanata, this item allows her to Mega Evolve in battle.",
+	},
+	watamite: {
+		name: "Watamite",
+		shortDesc: "If held by Tsunomaki Watame, this item allows her to Mega Evolve in battle.",
+	},
+	lunarite: {
+		name: "Lunarite",
+		shortDesc: "If held by Himemori Luna, this item allows her to Mega Evolve in battle.",
+	},
+	towasite: {
+		name: "Towasite",
+		shortDesc: "If held by Tokoyami Towa, this item allows her to Mega Evolve in battle.",
+	},
+	polkanite: {
+		name: "Polkanite",
+		shortDesc: "If held by Omaru Polka, this item allows her to Mega Evolve in battle.",
+	},
+	botanite: {
+		name: "Botanite",
+		shortDesc: "If held by Shishiro Botan, this item allows her to Mega Evolve in battle.",
+	},
+	lamilite: {
+		name: "Lamilite",
+		shortDesc: "If held by Yukihana Lamy, this item allows her to Mega Evolve in battle.",
+	},
+	nenenite: {
+		name: "Nenenite",
+		shortDesc: "If held by Momosuzu Nene, this item allows her become NENEMAX in battle.",
+	},
+	aloelite: {
+		name: "Aloelite",
+		shortDesc: "If held by Mano Aloe, this item allows her to Mega Evolve in battle.",
+	},
+	moonite: {
+		name: "Moonite",
+		shortDesc: "If held by Moona Hoshinova, this item allows her to Mega Evolve in battle.",
+	},
+	iofinite: {
+		name: "Iofinite",
+		shortDesc: "If held by Airani Iofifteen, this item allows her to Mega Evolve in battle.",
+	},
+	risurite: {
+		name: "Risurite",
+		shortDesc: "If held by Ayunda Risu, this item allows her to Mega Evolve in battle.",
+	},
+	ollilite: {
+		name: "Ollilite",
+		shortDesc: "If held by Kureiji Ollie, this item allows her to Mega Evolve in battle.",
+	},
+	reinite: {
+		name: "Reinite",
+		shortDesc: "If held by Pavolia Reine, this item allows her to Mega Evolve in battle.",
+	},
+	anyanite: {
+		name: "Anyanite",
+		shortDesc: "If held by Anya Melfissa, this item allows her to Mega Evolve in battle.",
+	},
+	gurite: {
+		name: "Gurite",
+		shortDesc: "If held by Gawr Gura, this item allows her to Mega Evolve in battle. a",
+	},
+	amelite: {
+		name: "Amelite",
+		shortDesc: "If held by Amelia Watson, this item allows her to Mega Evolve in battle.",
+	},
+	callite: {
+		name: "Callite",
+		shortDesc: "If held by Mori Calliope, this item allows her to Mega Evolve in battle.",
+	},
+	kiarite: {
+		name: "Kiarite",
+		shortDesc: "If held by Takanashi Kiara, this item allows her to Mega Evolve in battle.",
+	},
+	inanite: {
+		name: "Inanite",
+		shortDesc: "If held by Ninomae Ina'nis, this item allows her to Mega Evolve in battle. wah",
+	},
+	irysite: {
+		name: "IRySite",
+		shortDesc: "If held by IRyS, this item allows her to Mega Evolve in battle.",
+	},
+	sanalite: {
+		name: "Sanalite",
+		shortDesc: "If held by Tsukumo Sana, this item allows her to go BEEG in battle.",
+	},
+	faunite: {
+		name: "Faunite",
+		shortDesc: "If held by Ceres Fauna, this item allows her to Mega Evolve in battle. uuuuu",
+	},
+	kroniite: {
+		name: "Kroniite",
+		shortDesc: "If held by Ouro Kronii, this item allows her to Mega Evolve in battle.",
+	},
+	mumeinite: {
+		name: "Mumeinite",
+		shortDesc: "If held by Nanashi Mumei, this item allows her to Mega Evolve in battle.",
+	},
+	baelite: {
+		name: "Baelite",
+		shortDesc: "If held by Hakos Baelz, this item allows her to Mega Evolve in battle.",
+	},
+	laplusite: {
+		name: "Laplusite",
+		shortDesc: "If held by La+ Darkness, this item allows her to Mega Evolve in battle.",
+	},
+	irohite: {
+		name: "Irohite",
+		shortDesc: "If held by Kazama Iroha, this item allows her to Mega Evolve in battle.",
+	},
+	koyorite: {
+		name: "Koyorite",
+		shortDesc: "If held by Hakui Koyori, this item allows her to Mega Evolve in battle.",
+	},
+	luinite: {
+		name: "Luinite",
+		shortDesc: "If held by Takane Lui, this item allows her to Mega Evolve in battle.",
+	},
+	chloelite: {
+		name: "Chloelite",
+		shortDesc: "If held by Sakamata Chloe, this item allows her to Mega Evolve in battle.",
+	},
+	zetanite: {
+		name: "Zetanite",
+		shortDesc: "If held by Vestia Zeta, this item allows her to Mega Evolve in battle.",
+	},
+	kaelite: {
+		name: "Kaelite",
+		shortDesc: "If held by Kaela Kovalskia, this item allows her to Mega Evolve in battle. dahlah",
+	},
+	kobonite: {
+		name: "Kobonite",
+		shortDesc: "If held by Kobo Knaeru, this item allows her to Mega Evolve in battle.",
+	},
+	shiorite: {
+		name: "Shiorite",
+		shortDesc: "If held by Shiori Novella, this item allows her to Mega Evolve in battle.",
+	},
+	bijoulite: {
+		name: "Bijoulite",
+		shortDesc: "If held by Koseki Bijou, this item allows her to Mega Evolve in battle. :D",
+	},
+	nerissite: {
+		name: "Nerissite",
+		shortDesc: "If held by Nerissa Ravencroft, this item allows her to Mega Evolve in battle.",
+	},
+	mococite: {
+		name: "Mococite",
+		shortDesc: "If held by Mococo Abyssgard, this item allows her to Mega Evolve in battle. HOEH?",
+	},
+	fuwawite: {
+		name: "Fuwawite",
+		shortDesc: "If held by Fuwawa Abyssgard, this item allows her to Mega Evolve in battle.",
+	},
+	elizalite: {
+		name: "Elizalite",
+		shortDesc: "If held by Elizabeth Rose Bloodflame, this item allows her to Mega Evolve in battle.",
+	},
+	giginite: {
+		name: "Giginite",
+		shortDesc: "If held by Gigi Murin, this item allows her to Mega Evolve in battle.",
+	},
+	cecilite: {
+		name: "Cecilite",
+		shortDesc: "If held by Cecilia Immergreen, this item allows her to Mega Evolve in battle.",
+	},
+	raorite: {
+		name: "Raorite",
+		shortDesc: "If held by Raora Panthera, this item allows her to Mega Evolve in battle.",
+	},
 	abomasite: {
 		name: "Abomasite",
 		shortDesc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
