@@ -40,78 +40,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0.1,
 		num: 0,
 	},
-	spacetime: {
-		onStart(pokemon) {
-			this.field.addPseudoWeather('trickroom', pokemon);
-		},
-		name: "SpaceTime",
-		rating: 4,
-		num: -19,		
-	},
-	purepower: {
-		onModifySpAPriority: 5,
-		onModifyAtk(spa) {
-			return this.chainModify(2);
-		},
-		flags: {},
-		name: "Pure Power",
-		rating: 5,
-		num: 74,
-	},
-	seiso: {
-		onTryBoost(boost, target, source, effect) {
-			if (source && target === source) return;
-			let showMsg = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					delete boost[i];
-					showMsg = true;
-				}
-			}
-			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Seiso", "[of] " + target);
-			}
-		},
-		flags: {breakable: 1},
-		name: "Seiso",
-		rating: 2,
-		num: 29,
-	},
-	elite: {
-		onAfterEachBoost(boost, target, source, effect) {
-			if (!source || target.isAlly(source)) {
-				return;
-			}
-			let statsLowered = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					statsLowered = true;
-				}
-			}
-			if (statsLowered) {
-				this.boost({spa: 2}, target, target, null, false, true);
-			}
-		},
-		flags: {},
-		name: "Elite",
-		rating: 2.5,
-		num: 172,
-	},
-	diva: {
-		onBasePowerPriority: 7,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['sound']) {
-				this.debug('Punk Rock boost');
-				return this.chainModify([5325, 4096]);
-			}
-		},
-		flags: {breakable: 1},
-		name: "Diva",
-		rating: 3.5,
-		num: 244,
-	},
 	adaptability: {
 		onModifySTAB(stab, source, target, move) {
 			if (move.forceSTAB || source.hasType(move.type)) {
@@ -774,13 +702,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.boosts[i] = ally.boosts[i];
 			}
 			const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus'];
-			// we need to be sure to remove all the overlapping crit volatiles before trying to add any
-			for (const volatile of volatilesToCopy) pokemon.removeVolatile(volatile);
 			for (const volatile of volatilesToCopy) {
 				if (ally.volatiles[volatile]) {
 					pokemon.addVolatile(volatile);
 					if (volatile === 'gmaxchistrike') pokemon.volatiles[volatile].layers = ally.volatiles[volatile].layers;
 					if (volatile === 'dragoncheer') pokemon.volatiles[volatile].hasDragonType = ally.volatiles[volatile].hasDragonType;
+				} else {
+					pokemon.removeVolatile(volatile);
 				}
 			}
 			this.add('-copyboost', pokemon, ally, '[from] ability: Costar');
@@ -1417,11 +1345,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.hp) return;
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				if (pokemon.species.id !== 'cherrimsunshine') {
-					pokemon.formeChange('Cherrim-Sunshine', this.effect, false, '0', '[msg]');
+					pokemon.formeChange('Cherrim-Sunshine', this.effect, false, '[msg]');
 				}
 			} else {
 				if (pokemon.species.id === 'cherrimsunshine') {
-					pokemon.formeChange('Cherrim', this.effect, false, '0', '[msg]');
+					pokemon.formeChange('Cherrim', this.effect, false, '[msg]');
 				}
 			}
 		},
@@ -1520,7 +1448,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				break;
 			}
 			if (pokemon.isActive && forme) {
-				pokemon.formeChange(forme, this.effect, false, '0', '[msg]');
+				pokemon.formeChange(forme, this.effect, false, '[msg]');
 			}
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1},
@@ -1757,7 +1685,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.add('-activate', pokemon, 'ability: Guard Dog');
 			return null;
 		},
-		onTryBoostPriority: 2,
 		onTryBoost(boost, target, source, effect) {
 			if (effect.name === 'Intimidate' && boost.atk) {
 				delete boost.atk;
@@ -2476,7 +2403,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
-			this.actions.useMove(newMove, target, {target: source});
+			this.actions.useMove(newMove, target, source);
 			return null;
 		},
 		onAllyTryHitSide(target, source, move) {
@@ -2486,7 +2413,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
-			this.actions.useMove(newMove, this.effectState.target, {target: source});
+			this.actions.useMove(newMove, this.effectState.target, source);
 			return null;
 		},
 		condition: {
@@ -3599,6 +3526,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Punk Rock",
 		rating: 3.5,
 		num: 244,
+	},
+	purepower: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk) {
+			return this.chainModify(2);
+		},
+		flags: {},
+		name: "Pure Power",
+		rating: 5,
+		num: 74,
 	},
 	purifyingsalt: {
 		onSetStatus(status, target, source, effect) {
@@ -5607,7 +5544,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			pokemon.transformed = false;
 			delete pokemon.volatiles['zenmode'];
 			if (pokemon.species.baseSpecies === 'Darmanitan' && pokemon.species.battleOnly) {
-				pokemon.formeChange(pokemon.species.battleOnly as string, this.effect, false, '0', '[silent]');
+				pokemon.formeChange(pokemon.species.battleOnly as string, this.effect, false, '[silent]');
 			}
 		},
 		condition: {
@@ -5684,7 +5621,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
-			this.actions.useMove(newMove, target, {target: source});
+			this.actions.useMove(newMove, target, source);
 			return null;
 		},
 		onAllyTryHitSide(target, source, move) {
@@ -5695,7 +5632,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
-			this.actions.useMove(newMove, this.effectState.target, {target: source});
+			this.actions.useMove(newMove, this.effectState.target, source);
 			return null;
 		},
 		condition: {
