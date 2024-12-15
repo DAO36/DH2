@@ -1780,6 +1780,10 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Steadfast",
 		shortDesc: "If this Pokemon flinches, its Speed is raised by 1 stage.",
 	},
+	spacetime: {
+		name: "SpaceTime",
+		shortDesc: "On switch-in, this Pokemon summons Trick Room.",
+	},
 	steamengine: {
 		name: "Steam Engine",
 		desc: "This Pokemon's Speed is raised by 6 stages after it is damaged by a Fire- or Water-type move.",
