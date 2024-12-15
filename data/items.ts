@@ -19,6 +19,877 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 1881,
 		gen: 9,
 	},
+	sorite: {
+		name: "Sorite",
+		spritenum: 575,
+		megaStone: "Sora-Mega",
+		megaEvolves: "Sora",
+		itemUser: ["Sora"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	mikorite: {
+		name: "Mikorite",
+		spritenum: 575,
+		megaStone: "Miko-Mega",
+		megaEvolves: "Miko",
+		itemUser: ["Miko"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	suisite: {
+		name: "Suisite",
+		spritenum: 575,
+		megaStone: "Suisei-Mega",
+		megaEvolves: "Suisei",
+		itemUser: ["Suisei"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	robocite: {
+		name: "Robocite",
+		spritenum: 575,
+		megaStone: "Roboco-Mega",
+		megaEvolves: "Roboco",
+		itemUser: ["Roboco"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	azkinite: {
+		name: "AZKinite",
+		spritenum: 575,
+		megaStone: "AZKi-Mega",
+		megaEvolves: "AZKi",
+		itemUser: ["AZKi"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	fubukite: {
+		name: "Fubukite",
+		spritenum: 575,
+		megaStone: "Fubuki-Mega",
+		megaEvolves: "Fubuki",
+		itemUser: ["Fubuki"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	matsurite: {
+		name: "Matsurite",
+		spritenum: 575,
+		megaStone: "Matsuri-Mega",
+		megaEvolves: "Matsuri",
+		itemUser: ["Matsuri"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	haachamite: {
+		name: "Haachamite",
+		spritenum: 575,
+		megaStone: "Haachama-Mega",
+		megaEvolves: "Haachama",
+		itemUser: ["Haachama"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	melitite: {
+		name: "Melitite",
+		spritenum: 575,
+		megaStone: "Mel-Mega",
+		megaEvolves: "Mel",
+		itemUser: ["Mel"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	akirosite: {
+		name: "Akirosite",
+		spritenum: 575,
+		megaStone: "Akirose-Mega",
+		megaEvolves: "Akirose",
+		itemUser: ["Akirose"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	aquanite: {
+		name: "Aquanite",
+		spritenum: 575,
+		megaStone: "Aqua-Mega",
+		megaEvolves: "Aqua",
+		itemUser: ["Aqua"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	ayamite: {
+		name: "Ayamite",
+		spritenum: 575,
+		megaStone: "Ayame-Mega",
+		megaEvolves: "Ayame",
+		itemUser: ["Ayame"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	chocolite: {
+		name: "Chocolite",
+		spritenum: 575,
+		megaStone: "Choco-Mega",
+		megaEvolves: "Choco",
+		itemUser: ["Choco"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	shionite: {
+		name: "Shionite",
+		spritenum: 575,
+		megaStone: "Shion-Mega",
+		megaEvolves: "Shion",
+		itemUser: ["Shion"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	subarite: {
+		name: "Subarite",
+		spritenum: 575,
+		megaStone: "Subaru-Mega",
+		megaEvolves: "Subaru",
+		itemUser: ["Subaru"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	koronite: {
+		name: "Koronite",
+		spritenum: 575,
+		megaStone: "Korone-Mega",
+		megaEvolves: "Korone",
+		itemUser: ["Korone"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	mionite: {
+		name: "Mionite",
+		spritenum: 575,
+		megaStone: "Mio-Mega",
+		megaEvolves: "Mio",
+		itemUser: ["Mio"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	okayunite: {
+		name: "Okayunite",
+		spritenum: 575,
+		megaStone: "Okayu-Mega",
+		megaEvolves: "Okayu",
+		itemUser: ["Okayu"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	pekorite: {
+		name: "Pekorite",
+		spritenum: 575,
+		megaStone: "Pekora-Mega",
+		megaEvolves: "Pekora",
+		itemUser: ["Pekora"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	noelite: {
+		name: "Noelite",
+		spritenum: 575,
+		megaStone: "Noel-Mega",
+		megaEvolves: "Noel",
+		itemUser: ["Noel"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	rushianite: {
+		name: "Rushianite",
+		spritenum: 575,
+		megaStone: "Rushia-Mega",
+		megaEvolves: "Rushia",
+		itemUser: ["Rushia"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	flarite: {
+		name: "Flarite",
+		spritenum: 575,
+		megaStone: "Flare-Mega",
+		megaEvolves: "Flare",
+		itemUser: ["Flare"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,	
+	},
+	marinite: {
+		name: "Marinite",
+		spritenum: 575,
+		megaStone: "Marine-Mega",
+		megaEvolves: "Marine",
+		itemUser: ["Marine"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	coconite: {
+		name: "Coconite",
+		spritenum: 575,
+		megaStone: "Coco-Mega",
+		megaEvolves: "Coco",
+		itemUser: ["Coco"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	kanatite: {
+		name: "Kanatite",
+		spritenum: 575,
+		megaStone: "Kanata-Mega",
+		megaEvolves: "Kanata",
+		itemUser: ["Kanata"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	watamite: {
+		name: "Watamite",
+		spritenum: 575,
+		megaStone: "Watame-Mega",
+		megaEvolves: "Watame",
+		itemUser: ["Watame"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	lunarite: {
+		name: "Lunarite",
+		spritenum: 575,
+		megaStone: "Luna-Mega",
+		megaEvolves: "Luna",
+		itemUser: ["Luna"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	towasite: {
+		name: "Towasite",
+		spritenum: 575,
+		megaStone: "Towa-Mega",
+		megaEvolves: "Towa",
+		itemUser: ["Towa"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	polkanite: {
+		name: "Polkanite",
+		spritenum: 575,
+		megaStone: "Polka-Mega",
+		megaEvolves: "Polka",
+		itemUser: ["Polka"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	botanite: {
+		name: "Botanite",
+		spritenum: 575,
+		megaStone: "Botan-Mega",
+		megaEvolves: "Botan",
+		itemUser: ["Botan"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	lamilite: {
+		name: "Lamilite",
+		spritenum: 575,
+		megaStone: "Lamy-Mega",
+		megaEvolves: "Lamy",
+		itemUser: ["Lamy"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	nenenite: {
+		name: "Nenenite",
+		spritenum: 575,
+		megaStone: "Nene-Mega",
+		megaEvolves: "Nene",
+		itemUser: ["Nene"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	aloelite: {
+		name: "Aloelite",
+		spritenum: 575,
+		megaStone: "Aloe-Mega",
+		megaEvolves: "Aloe",
+		itemUser: ["Aloe"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	irohite: {
+		name: "Irohite",
+		spritenum: 575,
+		megaStone: "Iroha-Mega",
+		megaEvolves: "Iroha",
+		itemUser: ["Iroha"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	koyorite: {
+		name: "Koyorite",
+		spritenum: 575,
+		megaStone: "Koyori-Mega",
+		megaEvolves: "Koyori",
+		itemUser: ["Koyori"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	laplusite: {
+		name: "Laplusite",
+		spritenum: 575,
+		megaStone: "Laplus-Mega",
+		megaEvolves: "Laplus",
+		itemUser: ["Laplus"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	luinite: {
+		name: "Luinite",
+		spritenum: 575,
+		megaStone: "Lui-Mega",
+		megaEvolves: "Lui",
+		itemUser: ["Lui"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	chloelite: {
+		name: "Chloelite",
+		spritenum: 575,
+		megaStone: "Chloe-Mega",
+		megaEvolves: "Chloe",
+		itemUser: ["Chloe"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	moonite: {
+		name: "Moonite",
+		spritenum: 575,
+		megaStone: "Moona-Mega",
+		megaEvolves: "Moona",
+		itemUser: ["Moona"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	iofinite: {
+		name: "Iofinite",
+		spritenum: 575,
+		megaStone: "Iofi-Mega",
+		megaEvolves: "Iofi",
+		itemUser: ["Iofi"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	risurite: {
+		name: "Risurite",
+		spritenum: 575,
+		megaStone: "Risu-Mega",
+		megaEvolves: "Risu",
+		itemUser: ["Risu"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	ollilite: {
+		name: "Ollilite",
+		spritenum: 575,
+		megaStone: "Ollie-Mega",
+		megaEvolves: "Ollie",
+		itemUser: ["Ollie"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	reinite: {
+		name: "Reinite",
+		spritenum: 575,
+		megaStone: "Reine-Mega",
+		megaEvolves: "Reine",
+		itemUser: ["Reine"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	anyanite: {
+		name: "Anyanite",
+		spritenum: 575,
+		megaStone: "Anya-Mega",
+		megaEvolves: "Anya",
+		itemUser: ["Anya"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	zetanite: {
+		name: "Zetanite",
+		spritenum: 575,
+		megaStone: "Zeta-Mega",
+		megaEvolves: "Zeta",
+		itemUser: ["Zeta"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	kaelite: {
+		name: "Kaelite",
+		spritenum: 575,
+		megaStone: "Kaela-Mega",
+		megaEvolves: "Kaela",
+		itemUser: ["Kaela"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	kobonite: {
+		name: "Kobonite",
+		spritenum: 575,
+		megaStone: "Kobo-Mega",
+		megaEvolves: "Kobo",
+		itemUser: ["Kobo"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	gurite: {
+		name: "Gurite",
+		spritenum: 575,
+		megaStone: "Gura-Mega",
+		megaEvolves: "Gura",
+		itemUser: ["Gura"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	amelite: {
+		name: "Amelite",
+		spritenum: 575,
+		megaStone: "Ame-Mega",
+		megaEvolves: "Ame",
+		itemUser: ["Ame"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	callite: {
+		name: "Callite",
+		spritenum: 575,
+		megaStone: "Calliope-Mega",
+		megaEvolves: "Calliope",
+		itemUser: ["Calliope"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	inanite: {
+		name: "Inanite",
+		spritenum: 575,
+		megaStone: "Ina-Mega",
+		megaEvolves: "Ina",
+		itemUser: ["Ina"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	kiarite: {
+		name: "Kiarite",
+		spritenum: 575,
+		megaStone: "Kiara-Mega",
+		megaEvolves: "Kiara",
+		itemUser: ["Kiara"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	irysite: {
+		name: "IRySite",
+		spritenum: 575,
+		megaStone: "IRyS-Mega",
+		megaEvolves: "IRyS",
+		itemUser: ["IRyS"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	sanalite: {
+		name: "Sanalite",
+		spritenum: 575,
+		megaStone: "Sana-Mega",
+		megaEvolves: "Sana",
+		itemUser: ["Sana"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	faunite: {
+		name: "Faunite",
+		spritenum: 575,
+		megaStone: "Fauna-Mega",
+		megaEvolves: "Fauna",
+		itemUser: ["Fauna"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	kroniite: {
+		name: "Kroniite",
+		spritenum: 575,
+		megaStone: "Kronii-Mega",
+		megaEvolves: "Kronii",
+		itemUser: ["Kronii"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	mumeinite: {
+		name: "Mumeinite",
+		spritenum: 575,
+		megaStone: "Mumei-Mega",
+		megaEvolves: "Mumei",
+		itemUser: ["Mumei"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	baelite: {
+		name: "Baelite",
+		spritenum: 575,
+		megaStone: "Bae-Mega",
+		megaEvolves: "Bae",
+		itemUser: ["Bae"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	shiorite: {
+		name: "Shiorite",
+		spritenum: 575,
+		megaStone: "Shiori-Mega",
+		megaEvolves: "Shiori",
+		itemUser: ["Shiori"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	bijoulite: {
+		name: "Bijoulite",
+		spritenum: 575,
+		megaStone: "Bijou-Mega",
+		megaEvolves: "Bijou",
+		itemUser: ["Bijou"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	nerissite: {
+		name: "Nerissite",
+		spritenum: 575,
+		megaStone: "Nerissa-Mega",
+		megaEvolves: "Nerissa",
+		itemUser: ["Nerissa"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	mococite: {
+		name: "Mococite",
+		spritenum: 575,
+		megaStone: "Mococo-Mega",
+		megaEvolves: "Mococo",
+		itemUser: ["Mococo"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	fuwawite: {
+		name: "Fuwawite",
+		spritenum: 575,
+		megaStone: "Fuwawa-Mega",
+		megaEvolves: "Fuwawa",
+		itemUser: ["Fuwawa"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	elizalite: {
+		name: "Elizalite",
+		spritenum: 575,
+		megaStone: "Elizabeth-Mega",
+		megaEvolves: "Elizabeth",
+		itemUser: ["Elizabeth"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	giginite: {
+		name: "Giginite",
+		spritenum: 575,
+		megaStone: "Gigi-Mega",
+		megaEvolves: "Gigi",
+		itemUser: ["Gigi"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	cecilite: {
+		name: "Cecilite",
+		spritenum: 575,
+		megaStone: "Cecilia-Mega",
+		megaEvolves: "Cecilia",
+		itemUser: ["Cecilia"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
+	raorite: {
+		name: "Raorite",
+		spritenum: 575,
+		megaStone: "Raora-Mega",
+		megaEvolves: "Raora",
+		itemUser: ["Raora"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+	},
 	abomasite: {
 		name: "Abomasite",
 		spritenum: 575,
